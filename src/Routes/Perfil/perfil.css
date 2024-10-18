@@ -1,0 +1,13 @@
+.gustos {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+.gustos strong {
+    background-color: rgb(216, 216, 216);
+    padding: 10px;
+    border-radius: 8px;
+    
+}

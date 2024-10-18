@@ -1,9 +1,20 @@
 import './App.css'
-
+import { Cabecera } from './componentes/Cabecera/Cabecera'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Inicio } from './Routes/Inicio/Inicio'
+import { Perfil } from './Routes/Perfil/Perfil'
 function App() {
   return (
     <>
-      <h1>Administración de usuarios</h1>
+      <BrowserRouter>
+      <Cabecera />
+        <Routes>
+          <Route path='/' Component={Inicio}/>
+          <Route path='/perfil/:nombre' Component={Perfil}/>
+
+        </Routes>
+      </BrowserRouter>
+      
     </>
   )
 }
